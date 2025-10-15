@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        .outer-box{
+        border: 8px solid darkblue;
+        padding: 20px;
+        background-color:lightblue;
+        width: 300px;
+        margin: 30px auto;
+        }
+        .middle-box{
+            border: 5px solid orange;
+            padding: 15px;
+            background-color: lightcyan;
+        }
+        .inner-box{
+            border: 3px solid green;
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+         }
+        </style>
+</head>
+<body>
+    <div class="outer-box">
+    <div class="middle-box">
+    <div class="inner-box">
+        <h3>Layered Box Example</h3>
+        <p>This box has three layers of borders..</p>
+    </div>
+    </div> 
+    </div>
+    
+</body>
+</html>
