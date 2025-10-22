@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG SECTION</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .blog-section{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: wheat;
+         }
+         .blog-post{
+            width: 30%;
+            background-color: rosybrown;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            padding: 15px;
+         }
+         .blog-post img[src$=".jpg"]{
+            width: 100px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+         }
+         .blog-post h2{
+            color: teal;
+         }
+         .blog-post a[href="https"]{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+         }
+         @media only screen and (max-width: 600px) {
+            .blog-section{
+                flex-direction: column;
+                align-items: center;
+             }
+             .blog-post{
+                width: 90%;
+                font-size: 14px;
+             }
+            }
+            @media only screen and (orientation: portrait) {
+                .blog-section{
+                    background-color: lightsalmon;
+                }
+            }
+    </style>
+</head>
+<body>
+    <section class="blog-section">
+        <div class="blog-post">
+            <h2>Discover Nature Beauty</h2>
+            <img src="https://img.freepik.com/free-photo/green-trees-near-body-water-daytime_395237-20.jpg?semt=ais_hybrid&w=740&q=80" alt="Nature" width="300px" height="250px">
+            <p>Explore the most beautiful places around the world.</p>
+            <a href="https://www.nature.com/natindia/">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h2>Healthy Lifestyle Tips</h2>
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/healthy-lifestyle-tips-template-design-7bfb9c36dff8974ebfdc7d6ab484d820_screen.jpg?ts=1734307234" alt="Health" width="300px" height="250px">
+            <p>Learn how to maintain a balanced and healthy Lifestyle.</p>
+            <a href="https://www.healthline.com/nutrition/27-health-and-nutrition-tips">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h2>Technology Trends 2025</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHmnpM_rB1el0sOPfaPeQ43XJT5o2EhZkhCg&s" alt="Technology" width="300px" height="250px">
+            <p>Stay updated with the latest innovations and gadgets.</p>
+            <a href="https://www.google.com/search?q=technology+trends+2025+blog+link&sca_esv=2286ae5c4aad172f&sxsrf=AE3TifOPWTtLF2TmkA2TXTPFw46ClSswdA%3A1761149706367&ei=CgP5aJGdFvnG4-EP76Xh4AQ&ved=0ahUKEwiRypP1mbiQAxV54zgGHe9SGEwQ4dUDCBA&oq=technology+trends+2025+blog+link&gs_lp=Egxnd3Mtd2l6LXNlcnAiIHRlY2hub2xvZ3kgdHJlbmRzIDIwMjUgYmxvZyBsaW5rMggQABiABBiiBDIIEAAYogQYiQUyCBAAGIAEGKIEMggQABiiBBiJBTIIEAAYgAQYogRIr5QBUNwDWOdpcAF4AZABAJgBxQWgAec9qgEJMy0yLjYuNi4xuAEMyAEA-AEBmAIMoALPKsICChAAGLADGNYEGEfCAgQQIxgnwgIGEAAYFhgewgILEAAYgAQYkQIYigXCAgUQABiABMICCxAAGIAEGIYDGIoFwgIFECEYnwXCAgcQIRigARgKwgIFECEYoAGYAwCIBgGQBgiSBwkxLjMtMi43LjKgB6dEsgcHMy0yLjcuMrgHxCrCBwcwLjUuNi4xyAcw&sclient=gws-wiz-serp#:~:text=https%3A//www.forrester.com/predictions/">Read more</a>
+        </div>
+    </section>
+</body>
+</html>
